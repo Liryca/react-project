@@ -1,0 +1,104 @@
+.user-datails{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.user-datails-main{
+background: #F7F7F8;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.user-datails-other{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 17px;
+
+}
+
+.user-datails-column{
+        flex-direction: column;
+        display: flex;
+        gap: 47px;
+        padding-top: 27px;
+      
+}
+
+.user-datails-birthday, .user-datails-phone{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.user-datails-birthday img,
+.user-datails-phone img{
+    padding-right: 14px;
+}
+
+.navigation{
+    position: absolute;
+ top:28.76px ;
+ left: 32.87px;
+ cursor: pointer;
+}
+
+.user-datails-name{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #050510;
+        margin-bottom: 2px;
+}
+
+.user-datails-name span{
+font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #97979B;
+    padding-left: 4px;
+}
+
+
+.user-datails-avatar {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 24px;
+    border-radius: 64px;
+    margin-top: 72px;
+    border:1px solid black
+}
+
+.usrt-datails-department{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #55555C;
+        margin-bottom: 24px;
+}
+
+.user-datails-age{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #97979B;
+        padding-top: 26px;
+}
+
+@media(max-width:300px){
+    .user-datails-other{
+        flex-direction: column;
+        gap: 47px;
+    }
+}

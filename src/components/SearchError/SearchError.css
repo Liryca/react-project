@@ -1,0 +1,28 @@
+.search-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 149px;
+}
+
+.search-error-title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #050510;
+    margin-top: 8px;
+}
+
+.search-error-img {
+    width: 56px;
+    height: 56px;
+}
+
+.search-error p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #97979B;
+    margin: 0;
+}

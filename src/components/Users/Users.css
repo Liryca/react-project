@@ -1,0 +1,80 @@
+
+.user-card:active,
+.user-card:hover, 
+.user-card {
+  text-decoration: none;
+}
+.wrapper-user-list {
+    min-height: 100%;
+    overflow-y: hidden;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 0 16px;
+    padding: 0;
+    max-width: 1248px;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+
+.user-card-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border:1px solid black;
+}
+
+.user-card-name {
+    display: flex;
+    text-decoration: none;
+}
+
+.user-card-name p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 4px;
+    text-decoration: none;
+    color: #050510;
+}
+
+.user-tag {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #97979B;
+    text-decoration: none;
+}
+
+.user-card-department {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #55555C;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+.user-card-birthday {
+    margin-left: auto;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #55555C;
+    text-decoration: none;
+}
+
