@@ -12,9 +12,10 @@
 .user-list {
     display: flex;
     flex-direction: column;
-    margin: 16px 16px 0 16px;
-    padding: 0;
+    padding-top: 16px;
     max-width: 1248px;
+    margin: 0 auto;
+
 }
 
 .user-card {
