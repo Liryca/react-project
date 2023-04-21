@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { formatedPhone, getAge, getDayBirthday, getFullDayBirthday } from '../../api/api';
-import { useAppSelector } from '../../hooks/useSelectorTyped';
+import { useAppDispatch, useAppSelector } from '../../hooks/useSelectorTyped';
 import './UserDatails.css';
 import arrrow from './arrow.svg';
 import star from './star.svg';
 import phoneIcon from './phone.svg';
+import u from '../Users/user.png'
+import { getUsersThunk } from '../../store/users/actions';
 
 
 const UserDatails: React.FC = () => {
+
+     const dispatch = useAppDispatch();
+
+      useEffect(() => {
+    dispatch(getUsersThunk())
+  }, []);
 
     const params = useParams();
     console.log(params.id)
@@ -23,7 +31,7 @@ const UserDatails: React.FC = () => {
         <section className='user-datails'>
             <div className='user-datails-main'>
                 <Link to={'/'}><img className='navigation' src={arrrow} alt='arrow'></img></Link>
-                <img className='user-datails-avatar' src={avatarUrl} alt='avatar'></img>
+                <img className='user-datails-avatar' src={u} alt='avatar'></img>
                 <p className='user-datails-name'>{firstName} {lastName}<span>{userTag.toLowerCase()}</span></p>
                 <p className='usrt-datails-department' >{department}</p>
             </div>
